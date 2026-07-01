@@ -1,5 +1,8 @@
 z = int(input())
 num = list(map(int, input().split()))
 
-for i in range(len(num)) :
-    print(num[i]**2, end =" ")
+
+num_new = [new**2 for new in num]
+
+for i in range(z):
+    print(num_new[i], end=" ")
